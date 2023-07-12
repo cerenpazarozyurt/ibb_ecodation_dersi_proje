@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>One Page</title>
+  <!-- for language-->
+  <meta charset="utf-8" />
+  <!-- for Responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- SEO -->
+  <meta name="author" content="Ceren Pazarözyurt" />
+  <meta name="description" content="for one page" />
+  <meta name="keyword" content="html5,css3,Js, react, bootstrap5"/>
+  
+  <!--Google Font-->
+  <link href="https: //fonts.googleapis.com/css2?family= Manrope & display=swap" rel= " stylesheet"> 
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+  <!--external CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+  <noscript>Bu browser javascripti desteklemiyor.</noscript>
+    <!-- start codes -->
+
+    <!-- start nav codes -->
+    <nav id="navbar_id" nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark fixed-top">
+          <div class="container"> <!--container-fluid-->   <!--navbar ortalaması için kullanılır.-->
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-blogger"></i></a> <!--logo için kullanılır.-->
+          <!-- buttonda redirect yap-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user text-primary"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId" href="#">Login</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerId" href="#">Register</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button class="btn btn-primary" onclick="darkModu()"> <i class="fa-solid fa-moon"></i></button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin..." aria-label="Search">
+              <button class="btn btn-primary" type="submit">Ara</button>   <!--btn-outline-success-->
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- end nav codes -->
+
+    
+    <!-- Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form5Example1" class="form-control" />
+                  <label class="form-label" for="form5Example1">Name</label>
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+              
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                  <label class="form-check-label" for="form5Example3">
+                    I have read and agree to the terms
+                  </label>
+                </div>
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+          </div>  
+        </div>
+      </div>
+    </div>
+    
+    <!-- Register -->
+    <div class="modal fade" id="registerId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+            
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                <label class="form-check-label" for="form2Example33">
+                  Subscribe to our newsletter
+                </label>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+            
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+            
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+            
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+            
+                <button type="button" class="btn btn-secondary btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- start header codes -->
+     <header id="header_id">
+       <div class="text-white">
+        <div class="container text-center">
+          <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
+          <h4>Html5 Css3 JS React</h4>
+          <a href="" class="btn btn-primary">Linkedln</a>
+          <a href="" class="btn btn-danger">Blog</a>
+          <a href="" class="btn btn-success">Youtube</a></div>
+       </div>
+      </header>
+     <!-- end header codes -->
+
+     <!-- start main codes -->
+     <main id="main_id">
+      <!-- messages start -->
+      <section id="messages">
+        <div>
+          <h2 class="myHeading">Çalışmalarımız</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+              <i class="fa-brands fa-html5"></i>
+              <h4>Html5</h4>
+              <p class="line-clamp4">Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sed magni quo sit, consequatur ab fugit expedita labore maxime ducimus voluptate ipsam sequi, doloribus natus officiis enim modi eius error.
+              Quasi eligendi, impedit, sint animi adipisci at laborum molestias voluptates corporis vitae quo! Architecto iure quidem, qui facere beatae repellat consectetur eum voluptatum nulla deleniti vel. Sequi explicabo tempore eos.
+              Cum ab ea officiis deserunt tenetur molestias optio id, omnis sunt consectetur recusandae, voluptate accusantium dolorum distinctio eum maxime itaque! Voluptates ipsam veritatis illum cum incidunt? Officiis libero ducimus eos.
+              Vitae ex quo eaque inventore! Dignissimos porro illum velit quibusdam nam beatae! Sapiente itaque eos nam magni repudiandae necessitatibus laboriosam, voluptatum laudantium est nisi numquam architecto, placeat tempore quas officia.dolor sit amet, consectetur adipisicing elit. Inventore suscipit veniam labore eveniet, quam nobis.</p>
+              <button class="btn btn-primary">Daha fazla...</button>
+            </div>
+
+            <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+              <i class="fa-brands fa-css3 text-danger"></i>
+              <h4>Css3</h4>
+              <p class="line-clamp4">Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum enim rerum, voluptates fugiat commodi exercitationem, corrupti mollitia odit sint magni vitae quos quibusdam esse cupiditate veritatis praesentium, ipsam quas quod?
+              Aliquam aspernatur similique quos minima totam, ducimus quidem porro quia exercitationem corrupti, sunt ad cum earum blanditiis repellendus ratione nesciunt autem placeat voluptates qui ab. Voluptatibus laborum consectetur doloremque quod?
+              Quisquam minus, soluta esse cum exercitationem, nostrum neque modi libero eum cumque hic earum quae quis debitis? Eaque, sapiente, fugiat eum culpa facilis similique sed accusamus quis illum cupiditate magni.
+              Incidunt, explicabo magni fugit quibusdam quia ullam? Sit amet distinctio hic qui obcaecati nam fugit veritatis laudantium autem labore ipsa nisi, similique quia ratione aspernatur blanditiis tempore recusandae praesentium animi!dolor sit amet, consectetur adipisicing elit. Inventore suscipit veniam labore eveniet, quam nobis.</p>
+              <button class="btn btn-primary">Daha fazla...</button>
+            </div>
+
+            <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+              <i class="fa-brands fa-js"></i>
+              <h4>JavaScript</h4>
+              <p class="line-clamp4">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit officiis accusantium esse tempora commodi animi nam debitis ut labore culpa, sed tenetur fuga dicta voluptas fugit cum, laborum distinctio laboriosam.
+              Quidem a aliquam harum nemo, soluta iste nisi quibusdam blanditiis veritatis, facere dignissimos ab eius consectetur fugit quo debitis deserunt molestias eum numquam optio aspernatur aut ea! Perspiciatis, libero aliquam.
+              Doloremque unde incidunt, odit, maxime quod illo praesentium recusandae, accusamus nihil beatae tempora sequi culpa veniam necessitatibus facilis aperiam aut atque! Minima doloribus veritatis aspernatur voluptatum dignissimos inventore voluptas molestiae.
+              A, praesentium! Quod voluptatum qui debitis error iure fugiat? Sunt ipsum obcaecati consequatur sapiente, ab itaque reiciendis deserunt culpa rerum aperiam amet a neque? Culpa voluptas cum quaerat doloremque dolor?dolor sit amet, consectetur adipisicing elit. Inventore suscipit veniam labore eveniet, quam nobis.</p>
+              <button class="btn btn-primary">Daha fazla...</button>
+            </div>
+
+            <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+              <i class="fa-brands fa-react text-success"></i>
+              <h4>React JS</h4>
+              <p class="line-clamp4">Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto veritatis nam magni quos recusandae incidunt dolores autem, dolore totam officia architecto exercitationem consequatur, itaque beatae commodi sint impedit, voluptatibus sapiente.
+              Explicabo aliquid debitis distinctio, saepe recusandae minima sequi, facere odio accusamus doloremque dolore perspiciatis tenetur quia iure placeat mollitia repudiandae facilis veritatis, deserunt qui voluptas inventore quidem. Quas, cupiditate maxime!
+              Distinctio eius dolorem expedita vero adipisci quia voluptatum molestiae, itaque eum accusantium non? Autem eum rerum eveniet dolorem praesentium harum totam fugit blanditiis natus, aperiam quaerat repudiandae, qui sapiente omnis?
+              Laborum provident sit dolorem exercitationem suscipit voluptatibus, non, molestiae maxime molestias soluta unde iste beatae repellat pariatur facilis? Quaerat magnam dignissimos dicta nam nihil deleniti debitis cumque quia voluptate quis.dolor sit amet, consectetur adipisicing elit. Inventore suscipit veniam labore eveniet, quam nobis.</p>
+              <button class="btn btn-primary">Daha fazla...</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- messages end -->
+
+
+      <!-- parallax start -->
+      <section id="parallax">
+        <div class="container">
+          <div class="row">
+            <h2 class="myHeading">Hakkımızda</h2>
+            <p class="line-clamp20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate cum repudiandae, neque dolor quos perspiciatis necessitatibus mollitia nulla a ea illum, quam quidem consectetur voluptas officia blanditiis, laboriosam cumque consequuntur?
+            Molestiae nobis aut vitae nemo delectus doloribus, non temporibus nulla saepe minima, rem quia eum autem blanditiis obcaecati quam! Labore consequuntur omnis, error voluptates ullam fugit natus adipisci laboriosam quos.
+            Eius illum doloribus eos culpa, corrupti voluptate voluptatum at itaque ab aperiam dolores nostrum perferendis tempora fugit libero. Dolor hic natus, dolore saepe optio aspernatur minima deleniti vero! Tempora, odit.
+            Ut adipisci fugit veniam earum ipsam, labore excepturi sapiente est temporibus dolorum beatae quasi, tempora tenetur quod, et eaque esse recusandae nemo? Voluptatem blanditiis sint fuga ipsa eum debitis voluptatum.
+            Maxime, repudiandae optio! Non enim doloremque aliquid natus commodi beatae dolores dolor cum facere, suscipit voluptatibus, provident consectetur! Asperiores perferendis natus quibusdam nemo quod odio id repellendus ab illo distinctio!
+            Nemo autem neque, modi aut rem dolorem, obcaecati quod tempora quibusdam mollitia laudantium. Blanditiis quis at magnam, iure reprehenderit quia, nobis assumenda sed maiores, totam ipsa quod quasi qui! Quae?
+            Necessitatibus, et. Eius facilis soluta quos. Voluptatum, vero modi, hic esse temporibus impedit iste optio consectetur laudantium assumenda labore similique nesciunt dolorum qui fuga quo in reiciendis mollitia sequi eos.
+            Delectus enim officiis explicabo ratione hic impedit atque iste repellat, facilis, perferendis odio soluta, a eius natus labore molestiae? Nesciunt itaque molestiae quos obcaecati ratione saepe nam, aut id ab.
+            Cumque maxime quasi tenetur delectus sit. Sunt, dignissimos eius. Sapiente ducimus rem molestiae sit laborum, aliquid necessitatibus hic amet enim. Necessitatibus vitae laudantium harum quo aut quas obcaecati quia soluta.
+            Quaerat animi facere modi? Laudantium veniam perspiciatis sapiente sequi pariatur voluptates quidem quod labore, ducimus explicabo laboriosam. Consequuntur tenetur quidem nostrum hic, consequatur magni quas ea eaque vel dolore beatae?
+            Repellendus, et, sint itaque quisquam officia perferendis nam error molestiae commodi officiis earum reiciendis ut fuga nesciunt nobis laborum recusandae, repellat dolorum? Debitis ullam blanditiis omnis, corrupti magni similique minus?
+            Qui corporis quae veritatis cum officiis facere modi impedit omnis enim quis provident inventore, iure quidem accusantium tempore. Atque ipsam perspiciatis sed, accusantium soluta earum pariatur non quasi odio itaque?</p>
+            <div class="col-4"></div>
+            <div class="col-4"></div><a class="btn btn-primary"> Daha fazla...</a>
+            <div class="col-4"></div>
+          </div>
+        </div>
+      </section>
+      <!-- parallax end -->
+
+
+            <!-- newspaper start -->
+            <section id="newspaper">
+              <div class="container">
+                <div class="row">
+                  <h2 class="myHeading">Yeni Haberler</h2>
+                  <p class="line-clamp20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate cum repudiandae, neque dolor quos perspiciatis necessitatibus mollitia nulla a ea illum, quam quidem consectetur voluptas officia blanditiis, laboriosam cumque consequuntur?
+                  Molestiae nobis aut vitae nemo delectus doloribus, non temporibus nulla saepe minima, rem quia eum autem blanditiis obcaecati quam! Labore consequuntur omnis, error voluptates ullam fugit natus adipisci laboriosam quos.
+                  Eius illum doloribus eos culpa, corrupti voluptate voluptatum at itaque ab aperiam dolores nostrum perferendis tempora fugit libero. Dolor hic natus, dolore saepe optio aspernatur minima deleniti vero! Tempora, odit.
+                  Ut adipisci fugit veniam earum ipsam, labore excepturi sapiente est temporibus dolorum beatae quasi, tempora tenetur quod, et eaque esse recusandae nemo? Voluptatem blanditiis sint fuga ipsa eum debitis voluptatum.
+                  Maxime, repudiandae optio! Non enim doloremque aliquid natus commodi beatae dolores dolor cum facere, suscipit voluptatibus, provident consectetur! Asperiores perferendis natus quibusdam nemo quod odio id repellendus ab illo distinctio!
+                  Nemo autem neque, modi aut rem dolorem, obcaecati quod tempora quibusdam mollitia laudantium. Blanditiis quis at magnam, iure reprehenderit quia, nobis assumenda sed maiores, totam ipsa quod quasi qui! Quae?
+                  Necessitatibus, et. Eius facilis soluta quos. Voluptatum, vero modi, hic esse temporibus impedit iste optio consectetur laudantium assumenda labore similique nesciunt dolorum qui fuga quo in reiciendis mollitia sequi eos.
+                  Delectus enim officiis explicabo ratione hic impedit atque iste repellat, facilis, perferendis odio soluta, a eius natus labore molestiae? Nesciunt itaque molestiae quos obcaecati ratione saepe nam, aut id ab.
+                  Cumque maxime quasi tenetur delectus sit. Sunt, dignissimos eius. Sapiente ducimus rem molestiae sit laborum, aliquid necessitatibus hic amet enim. Necessitatibus vitae laudantium harum quo aut quas obcaecati quia soluta.
+                  Quaerat animi facere modi? Laudantium veniam perspiciatis sapiente sequi pariatur voluptates quidem quod labore, ducimus explicabo laboriosam. Consequuntur tenetur quidem nostrum hic, consequatur magni quas ea eaque vel dolore beatae?
+                  Repellendus, et, sint itaque quisquam officia perferendis nam error molestiae commodi officiis earum reiciendis ut fuga nesciunt nobis laborum recusandae, repellat dolorum? Debitis ullam blanditiis omnis, corrupti magni similique minus?
+                  Qui corporis quae veritatis cum officiis facere modi impedit omnis enim quis provident inventore, iure quidem accusantium tempore. Atque ipsam perspiciatis sed, accusantium soluta earum pariatur non quasi odio itaque?</p>
+                  <div class="col-4"></div>
+                  <div class="col-4"></div><a class="btn btn-outline-danger"> Daha fazla...</a>
+                  <div class="col-4"></div>
+                </div>
+              </div>
+            </section>
+            <!-- newspaper end -->
+
+
+            <!-- blog start -->
+               <section id="blog">
+                  <div class="container">
+                     <div class="row">
+                        <h2 class="myHeading">Blog</h2>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3">
+                          <div class="card">
+                            <img class="card-img-top" src="./img/parallax.jpg" alt="Title">
+                            <div class="card-body">
+                              <h4 class="card-title myHeading">Blog-1</h4>
+                              <p class="card-text line-clamp8 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur. Sint expedita, laudantium reiciendis odio iste, cumque nostrum earum blanditiis odit iure ea ut. Eligendi inventore alias eveniet sapiente dolor.
+                              Fugiat non labore harum. Explicabo possimus laudantium eos perspiciatis quam iure? Id praesentium repellendus odio accusantium optio, reiciendis soluta eius velit totam cum nulla architecto tempore ducimus vel beatae eum!
+                              Nihil, ex! Repudiandae aspernatur, dolorum voluptate adipisci temporibus a est? Officia at blanditiis corporis ipsam, veniam tempore dolore quo sed voluptas, nihil molestias velit in culpa perferendis architecto consectetur tempora.
+                              Ipsa minima inventore maiores voluptatem consectetur! Velit placeat impedit numquam? Recusandae, saepe? Fugiat iste obcaecati ut aut, est exercitationem cumque rem laudantium molestias et fugit quisquam quibusdam accusamus sequi nulla.
+                              Voluptatibus velit reiciendis saepe corporis voluptatem odit necessitatibus, nesciunt assumenda, quos porro recusandae rem suscipit quo harum, autem obcaecati eaque odio! Excepturi rerum repudiandae facilis quibusdam maxime sint quam cumque.
+                              Qui neque totam, corrupti fuga saepe perspiciatis necessitatibus eligendi temporibus enim a. Rem maiores placeat vero tempore eveniet. Est beatae voluptates ullam accusantium a molestias! Autem velit veniam inventore libero.
+                              Tenetur, alias. Ea totam, temporibus adipisci, neque omnis nesciunt id voluptatem unde natus culpa ad odio, veniam porro nemo quos suscipit ratione beatae accusamus voluptate doloremque error? Corporis, minus maiores.
+                              Illo omnis dicta, voluptas non rem nisi sapiente est. Hic, ab tempora. Laborum suscipit explicabo vitae doloremque dicta dolorum, porro architecto repellendus hic eos beatae molestiae. Ea quam earum repellat!</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                  </div>
+              </section>
+            <!-- blog end -->
+
+
+            <!-- contact start -->
+            <section id="contact"></section>
+
+            <!-- contact end -->
+     </main>
+     
+
+  <!-- <a href="#">Lorem ipsum dolor sit.</a> -->
+
+     <!-- end main codes -->
+
+     <!-- start footer codes -->
+     <footer id="footer_id" class="bg-dark">
+        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar Saklıdır.</div>
+
+     </footer>
+     <!-- end footer codes -->
+
+     <a href="#navbar_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up-long"></i></a> 
+
+     
+   <!-- <h1 class="text-primary">Tutorials</h1>
+    <i class="fa-solid fa-user"></i> -->
+
+
+    <!-- end codes --> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" />
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" />
+  </script>
+
+  <!--external JS-->
+  <script src="template.js"></script>
+</body>
+
+</html>
