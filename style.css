@@ -5,23 +5,24 @@ date:    14/ June/ 2023
 version: v1
 */
 
-/*################################################################*/
-/* root */
+/*###########################################*/
+/* Root */
 :root{
     --templateBgColor:rgb(43,43,43);
 }
 
-/*################################################################*/
+/*############################################*/
 /* common property */
-
 *{
     margin:0;
     padding:0px;
     box-sizing:border-box;
 }
+
 html{
     font-size: 20px;
 }
+
 body {
     font-family: 'Manrope', sans-serif;
     line-height: 1.2;
@@ -42,11 +43,12 @@ img{
 }
 
 img:hover{
-    opacity:0.98;
+    opacity:0.9;
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
     transition:3s all;
     cursor:pointer;
 }
+
 i{
     font-size: 1.5rem;
 }
@@ -66,8 +68,8 @@ p{
     text-decoration: underline;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0.4px -0.9px rgba(0,0,0,.4);
-    opacity:0.7;
+    text-shadow: 0.4px -0.9px rgba(0,0,0,0.9);
+    opacity:0.8;
 }
 
 /* my special size*/
@@ -123,7 +125,7 @@ p{
     overflow: hidden;
 }
 
-/*################################################################*/
+/*###########################################*/
 
 /* Navbar */
 .dark_mode{
@@ -148,6 +150,7 @@ header{
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 #messages > .container > .row > .text-center>p{
     color:black !important;
 }
@@ -176,17 +179,31 @@ header{
 #newspaper{
     height: 35rem;
     padding: 2rem;
+    background-color: transparent;
+    background-size: cover;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #newspaper p{
     color: black !important;
-    text-align: justify;
+    text-align: justify;  /* ne işe yarıyor bak*/
 }
 
 /* blog */
 #blog{
     background-color: #b5b8ff;
 }
+
+/*contact*/
+#contact {background-color: transparent;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
 
 /* footer */
 footer{
