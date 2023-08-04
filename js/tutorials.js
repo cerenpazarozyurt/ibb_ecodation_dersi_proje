@@ -594,7 +594,7 @@ let usernameAndSurnameMasking = () => {
 // // belirli zaman sonra tek bir kere çalışır ve durur
 // setTimeout(function(){
 //     console.log("setTimeout çalıştı");
-// },2000);
+// },2000);      //buradaki 2000 2 milisaniye olmakta ve o kadar süre sonra çalışmasını sağlar.
 
 // // belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
 // setInterval(()=>{
@@ -602,4 +602,39 @@ let usernameAndSurnameMasking = () => {
 // },3000);
 
 ////////////////////////////////////////////////////////
-// callbackfunction
+    // callbackfunction
+//fonksiyonu geri çağırmak // çoklu işlemlerde kullanılır.
+const birinci = (data) => {
+    return Math.pow(data, 2);
+}
+
+const ikinci = (callbackFunction) => {
+    let user = Number(prompt("Lütfen Sayı Giriniz"));
+    let data = callbackFunction(user);
+    console.log(data);
+}
+//ikinci(birinci)
+
+////////////////////////////////////////////////////////
+// promise
+
+const promTutorials = () => {     //sürekli if else yapılarının içinde boğulmamayı sağlar.
+    // catch 1 tane olmak zorunda
+    let data = new Promise((resolve, reject) => {
+        let status = 400;
+        if (status === 200)
+            resolve("çalıştı");
+        else
+            reject("çalışmadı")
+    }).then(
+        () => { console.log("olumlu"); }
+    ).catch(
+        (err) => { console.error(err); }
+    );
+}
+//promTutorials()
+
+// asyn/await
+
+////////////////////////////////////////////////////////
+// dizi, Iterative for, for in, for of, forEach, map, filter , fill
