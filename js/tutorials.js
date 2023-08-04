@@ -570,3 +570,36 @@ let usernameAndSurnameMasking = () => {
 //usernameAndSurnameMasking();
 
 ////////////////////////////////////////////////////////
+    //ARAŞTIR
+// software  prensible
+// KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTI CODE, DUMMY CODE
+////////////////////////////////////////////////////////
+    // Monad 
+//bir kodun çıktısı diğer kodun girdisi ise buna monad denir
+ 
+// const birinci=()=>{
+// let user=Number(prompt("Lütfen Sayı Giriniz"));
+// return user;
+// }
+
+// const ikinci=()=>{
+// let data=birinci();
+// console.log(Math.sqrt(data));
+// }
+//ikinci()
+
+////////////////////////////////////////////////////////
+// setTimeOut(),setInterval();
+
+// // belirli zaman sonra tek bir kere çalışır ve durur
+// setTimeout(function(){
+//     console.log("setTimeout çalıştı");
+// },2000);
+
+// // belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
+// setInterval(()=>{
+//     console.log("setInterval çalıştı");
+// },3000);
+
+////////////////////////////////////////////////////////
+// callbackfunction
